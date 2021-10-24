@@ -160,7 +160,7 @@ function animateGhostVetical(who){
   if(who.y>=600){
     changeDirection(who);
   }
-  if(who.y<=10){
+  if(who.y<=0){
     changeDirection(who);
   }
 }
@@ -184,7 +184,7 @@ function animateGhostHorizontal(who){
     changeDirection(who);
     who.setVelocityX(-100);
   }
-  if(who.x<=20){
+  if(who.x<=0){
     changeDirection(who);
     who.setVelocityX(100);
   }
