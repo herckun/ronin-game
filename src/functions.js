@@ -123,10 +123,9 @@ function changeDirection(forwho){
       directions[id] = 'down';
       break;
     case 'down':
-      forwho.y=550;
-      directions[id] = 'up';
-
-      break;
+    forwho.y=550;
+    directions[id] = 'up';
+    break;
   }
 }
 
@@ -145,23 +144,22 @@ function animatePlatFormsHorizontal(who,speed){
 }
 function animateGhostVetical(who){
   var id = who.name;
-
   if(typeof directions[id] === 'undefined'){
     directions[id] = 'down';
   }
   if(directions[id] == 'down'){
     who.anims.play('fly_to_right', true);
-    who.setVelocityY(100);
+    who.setVelocityY(70);
   }
   else{
     who.anims.play('fly_to_left', true);
-    who.setVelocityY(-100);
+    who.setVelocityY(-70);
 
   }
-  if(who.y>=600){
+  if(who.y>600){
     changeDirection(who);
   }
-  if(who.y<=0){
+  if(who.y<0){
     changeDirection(who);
   }
 }
