@@ -115,11 +115,11 @@ function changeDirection(forwho){
     break;
     case 'up':
       directions[id] = 'down';
-      forwho.y=30;
+      forwho.y=100;
     break;
     case 'down':
       directions[id] = 'up';
-      forwho.y=590;
+      forwho.y=550;
     break;
     default:
     directions[id] = 'right';

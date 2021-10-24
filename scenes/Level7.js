@@ -84,11 +84,11 @@ class LEVEL_SEVEN extends Phaser.Scene{
       ghosts["Ghost2"].setName('Ghost2');
       ghosts["Ghost3"] = this.physics.add.sprite(480, 200, 'ghost1');
       ghosts["Ghost3"].setName('Ghost3');
-      ghosts["Ghost3"].rotation = 45;
       ghosts["Ghost4"] = this.physics.add.sprite(716, 100, 'ghost1');
       ghosts["Ghost4"].setName('Ghost4');
-      ghosts["Ghost4"].rotation = 45;
 
+      ghosts["Ghost4"].rotation = 45;
+      ghosts["Ghost3"].rotation = 45;
       ghosts["Ghost2"].rotation = 45;
       ghosts["Ghost1"].rotation = 45;
       mobs.add(ghosts["Ghost1"]);
