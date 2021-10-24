@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>The Ronin Who Saved The Niwalloween</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
+    <style type="text/css">
+    @font-face {
+        font-family: 'pixelFont'; 
+        src: url('assets/pixel_font.ttf'); 
+    }
+        body {
+          text-align:center;
+          background: rgb(218, 71, 115);
+          font-family: 'pixelFont'; 
+          color:white;
+
+        }
+        a{
+          color:black;
+          text-decoration: none;
+        }
+        #title{
+          text-decoration: underline;
+          color:black;
+        }
+        canvas{
+          display: inline;
+          border-radius: 9px;
+        }
+        p{
+          text-indent: 50px;
+
+        }
+        .text_containter{
+          background: rgba(0, 0, 0, 0.452);
+          padding: 45px;
+          border-radius: 9px;
+          width:800px;
+
+        }
+    </style>
+</head>
+<body>
+  <h1 id="title">THE RONIN WHO SAVED THE NIWALLOWEEN</h1>
+  <h2>Story</h2>
+  <div class="text_containter" style="font-size: 16px;width:800px;text-align: left;  display: table;
+  margin: 0 auto;">
+  <p>IT'S CLOSE TO NIWALLOWEEN AND THE EMPRESS IS READY USE THE SACRED CHERRY BLOSSOM TO BLESS EVERYONE WITH LUCK AND PROTECTION FOR THE NEXT YEAR.</p>
+ <p>EVERYTHING SEEMS PEACEFUL UNTIL THE GHOSTS STEAL THE SACRED BLOSSOM TO USE ITS POWER FOR THEMSELVES. IN A FOOLISH ATTEMPT TO USE THE GREAT POWER THEY FAIL, BUT THE SACRED BLOSSOM GETS BROKEN INTO PIECES ALL OVER THE PLACE</p>
+ <p>YOU ARE A YOUNG RONIN AND YOU NEED TO RECOVER ALL THE PIECES TO BRING THE BLOSSOM TO ITS FULL POWER. YOU HAVE TO HURRY BEFORE NIWALLOWEEN ENDS OR THE GHOSTS WILL FIND THEM FIRST AND BRING THEM TO THE SPIRIT WORLD MAKING THEM LOST FOREVER.</p>
+  </div>
+  <br>
+  <div id="game"></div>
+  <h2>How to play</h2>
+  <ul class="text_containter" style="font-size: 24px;text-align: left;  display: table;
+  margin: 0 auto;">
+    <li> Use your arrow keys to move around : < to move left, > to move right and ^ to jump</li>
+    <li> Collect blossoms to pass the level</li>
+    <li> Collect coins to gain more points</li>
+    <li> Don't fall into the void</li>
+    <li> Even if the ghosts look friendly they won't hesitate to kill you if you bump into them</li>
+  </ul>
+
+  <br>
+
+  made by <a href="https://twitter.com/herckun" target="_blank">herc-kun</a>
+  <!--load game loader and functions-->
+  <script src="src/functions.js"></script>
+  <script src="src/GameLoader.js"></script>
+  <!--load  gameover, menu and end screen-->
+  <script src="scenes/MainMenu.js"></script>
+  <script src="scenes/GameOver.js"></script>
+  <script src="scenes/EndScreen.js"></script>
+  <!--load levels-->
+  <script src="scenes/Level9.js"></script>
+  <script src="scenes/Level8.js"></script>
+  <script src="scenes/Level7.js"></script>
+  <script src="scenes/Level6.js"></script>
+  <script src="scenes/Level5.js"></script>
+  <script src="scenes/Level4.js"></script>
+  <script src="scenes/Level3.js"></script>
+  <script src="scenes/Level2.js"></script>
+  <script src="scenes/Level1.js"></script>
+  <script src="scenes/Level0.js"></script>
+  <!--load game initiator-->
+  <script src="src/game.js"></script>
+</body>
+</html>
