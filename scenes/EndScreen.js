@@ -11,8 +11,8 @@ class END_SCREEN extends Phaser.Scene{
       sfx['end_song'].setLoop(true);
       var style = { font: "40px pixelFont", fill: "#f79616", align: "center" };
       texts[0]= this.add.text(screenCenterX, 280, "YOU SAVED THE NIWALLOWEEN!", style).setOrigin(0.5);;
-      texts[1]=this.add.text(screenCenterX, 320, "THANK YOU FOR PLAYING!", { font: "32px pixelFont", fill: "#ffffff", align: "center" }).setOrigin(0.5);
-      texts[2]=this.add.text(screenCenterX, 355, "FINAL SCORE : " + points, { font: "20px pixelFont", fill: "#e81e6f", align: "center" }).setOrigin(0.5);
+      texts[1]=this.add.text(screenCenterX, 330, "THANK YOU FOR PLAYING!", { font: "32px pixelFont", fill: "#ffffff", align: "center" }).setOrigin(0.5);
+      texts[2]=this.add.text(screenCenterX, 365, "FINAL SCORE : " + points, { font: "20px pixelFont", fill: "#e81e6f", align: "center" }).setOrigin(0.5);
       texts[3]=this.add.text(screenCenterX, 735, "SPECIAL THANKS TO", { font: "28px pixelFont", fill: "#ffffff", align: "center" }).setOrigin(0.5);
       texts[4]= this.add.text(screenCenterX, 800, "CRAFTPIX.NET FOR SOME GAME ASSETS", { font: "20px pixelFont", fill: "#2e9cf0", align: "center" }).setOrigin(0.5);
       texts[5]= this.add.text(screenCenterX, 825, "FREESOUND.ORG FOR SOUND EFFECTS", { font: "20px pixelFont", fill: "#2e9cf0", align: "center" }).setOrigin(0.5);
