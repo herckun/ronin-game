@@ -121,9 +121,6 @@ function changeDirection(forwho){
       directions[id] = 'up';
       forwho.y=550;
     break;
-    default:
-    directions[id] = 'right';
-
   }
 }
 
