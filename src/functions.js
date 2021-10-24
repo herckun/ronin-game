@@ -192,11 +192,6 @@ function levelUp(){
     //kill player movement
     cursors.left.isDown = false; 
     cursors.right.isDown = false; 
-  
-    mobs.children.each(function(mob) {
-      mob.destroy();
-
-    });  
   blossom.destroy();
   sfx['levelup'].play();
   addPoints(this,100);
