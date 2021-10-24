@@ -119,13 +119,14 @@ function changeDirection(forwho){
     forwho.x+=20;
     break;
     case 'up':
+      forwho.y=70;
       directions[id] = 'down';
-      forwho.y=90;
-    break;
+      break;
     case 'down':
-      directions[id] = 'up';
       forwho.y=550;
-    break;
+      directions[id] = 'up';
+
+      break;
   }
 }
 
