@@ -20,7 +20,7 @@ function refreshHealth(scene){
 function refreshPoints(scene){
   score.destroy();
   var style = { font: "15px pixelFont", fill: "#ffffff", align: "center" };
-  score = scene.add.text(86, 49.45, "SCORE : " + points, style);
+  score = scene.add.text(86, 10.45, "SCORE : " + points, style);
   score.setText("SCORE:" + points);
 }
 function playerMovements(cursors,player,thisGame){
