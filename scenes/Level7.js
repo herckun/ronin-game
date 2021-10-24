@@ -78,23 +78,23 @@ class LEVEL_SEVEN extends Phaser.Scene{
   
       //spwan Ghosts
     
-      ghosts["Ghost1"] = this.physics.add.sprite(100, 150, 'ghost1');
-      ghosts["Ghost1"].setName('Ghost1');
-      ghosts["Ghost2"] = this.physics.add.sprite(280, 400, 'ghost1');
-      ghosts["Ghost2"].setName('Ghost2');
-      ghosts["Ghost3"] = this.physics.add.sprite(480, 200, 'ghost1');
-      ghosts["Ghost3"].setName('Ghost3');
-      ghosts["Ghost4"] = this.physics.add.sprite(716, 100, 'ghost1');
-      ghosts["Ghost4"].setName('Ghost4');
+      ghosts["larry"] = this.physics.add.sprite(100, 150, 'ghost1');
+      ghosts["larry"].setName('larry');
+      ghosts["garry"] = this.physics.add.sprite(280, 400, 'ghost1');
+      ghosts["garry"].setName('garry');
+      ghosts["jane"] = this.physics.add.sprite(480, 200, 'ghost1');
+      ghosts["jane"].setName('jane');
+      ghosts["amadeus"] = this.physics.add.sprite(716, 100, 'ghost1');
+      ghosts["amadeus"].setName('amadeus');
 
-      ghosts["Ghost4"].rotation = 45;
-      ghosts["Ghost3"].rotation = 45;
-      ghosts["Ghost2"].rotation = 45;
-      ghosts["Ghost1"].rotation = 45;
-      mobs.add(ghosts["Ghost1"]);
-      mobs.add(ghosts["Ghost2"]);
-      mobs.add(ghosts["Ghost3"]);
-      mobs.add(ghosts["Ghost4"]);
+      ghosts["amadeus"].rotation = 45;
+      ghosts["jane"].rotation = 45;
+      ghosts["garry"].rotation = 45;
+      ghosts["larry"].rotation = 45;
+      mobs.add(ghosts["larry"]);
+      mobs.add(ghosts["garry"]);
+      mobs.add(ghosts["jane"]);
+      mobs.add(ghosts["amadeus"]);
 
 
       player.setGravityY(500);
@@ -133,10 +133,10 @@ class LEVEL_SEVEN extends Phaser.Scene{
       if(gameover == true){
         return;
       }
-      animateGhostVetical(ghosts["Ghost1"]);
-      animateGhostVetical(ghosts["Ghost2"]);
-      animateGhostVetical(ghosts["Ghost3"]);
-      animateGhostVetical(ghosts["Ghost4"]);
+      animateGhostVetical(ghosts["larry"]);
+      animateGhostVetical(ghosts["garry"]);
+      animateGhostVetical(ghosts["jane"]);
+      animateGhostVetical(ghosts["amadeus"]);
 
       refreshPoints(this);
       animateObjects(this);
