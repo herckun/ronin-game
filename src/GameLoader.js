@@ -111,7 +111,7 @@ class GameLoader extends Phaser.Scene
     //load StatusBar
     statusBar = this.add.image(100, 45, 'status');
     var style = { font: "13px Arial", fill: "#a33361", align: "center" };
-    score = this.add.text(80, 53.45, "Points: " + points, style);
+    score = this.add.text(80, 10.45, "Points: " + points, style);
 
 
 
