@@ -8,7 +8,7 @@ scene: [Main_Menu,GameLoader,LEVEL_ZERO,LEVEL_ONE,LEVEL_TWO,LEVEL_THREE,LEVEL_FO
 physics: {
     default: 'arcade',
     arcade: {
-        debug: false
+        debug: true
     }
 },
 
