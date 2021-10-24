@@ -8,7 +8,7 @@ class GameOver extends Phaser.Scene{
     const screenCenterY = this.cameras.main.worldView.y + this.cameras.main.height / 2;
 
     var style = { font: "48px pixelFont", fill: "#ffffff", align: "center" };
-    this.add.text(screenCenterX, screenCenterY, "GAME OVER", style).setOrigin(0.5);
+    this.add.text(screenCenterX, screenCenterY - 200, "GAME OVER", style).setOrigin(0.5);
     this.add.text(screenCenterX, screenCenterY + 20 , "SCORE : " + points, { font: "20px pixelFont", fill: "#ffffff", align: "center" }).setOrigin(0.5);
     this.add.text(screenCenterX, screenCenterY + 40, "PRESS [R] TO TRY AGIAN", { font: "20px pixelFont", fill: "#ffffff", align: "center" }).setOrigin(0.5);
     this.add.text(screenCenterX, screenCenterY +  60, "PRESS [ESC] TO GO TO MAIN MENU", { font: "20px pixelFont", fill: "#ffffff", align: "center" }).setOrigin(0.5);
