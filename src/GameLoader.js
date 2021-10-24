@@ -122,6 +122,6 @@ class GameLoader extends Phaser.Scene
     sfx['menu_song'].stop();
     sfx['music'].play();
     sfx['music'].setLoop(true);
-    this.scene.start('LEVEL_ZERO');
+    this.scene.start('END_SCREEN');
   }
 }
