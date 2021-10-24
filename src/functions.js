@@ -115,8 +115,8 @@ function changeDirection(forwho){
 
     break;
     case 'left':
+    forwho.x=70;
     directions[id] = 'right';
-    forwho.x+=20;
     break;
     case 'up':
       forwho.y=70;
