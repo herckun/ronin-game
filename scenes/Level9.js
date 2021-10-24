@@ -55,28 +55,29 @@ class LEVEL_NINE extends Phaser.Scene{
       player.y = spawnpoint.y;
   
       //spwan Ghosts
-      ghosts["Ghost1"] = this.physics.add.sprite(300, 150, 'ghost1');
-      ghosts["Ghost1"].setName('Ghost1');
-      ghosts["Ghost2"] = this.physics.add.sprite(580, 400, 'ghost1');
-      ghosts["Ghost2"].setName('Ghost2');
-      ghosts["Ghost3"] = this.physics.add.sprite(580, 80, 'ghost1');
-      ghosts["Ghost3"].setName('Ghost3');
-      ghosts["Ghost4"] = this.physics.add.sprite(716, 400, 'ghost1');
-      ghosts["Ghost4"].setName('Ghost4');
-      ghosts["Ghost5"] = this.physics.add.sprite(256, 550, 'ghost1');
-      ghosts["Ghost5"].setName('Ghost5');
-      ghosts["Ghost6"] = this.physics.add.sprite(516, 600, 'ghost1');
-      ghosts["Ghost6"].setName('Ghost6');      
-      ghosts["Ghost2"].rotation = 45;
-      ghosts["Ghost1"].rotation = 45;
-      ghosts["Ghost5"].rotation = 45;
-      ghosts["Ghost6"].rotation = 45;
-      mobs.add(ghosts["Ghost1"]);
-      mobs.add(ghosts["Ghost2"]);
-      mobs.add(ghosts["Ghost3"]);
-      mobs.add(ghosts["Ghost4"]);
-      mobs.add(ghosts["Ghost5"]);
-      mobs.add(ghosts["Ghost6"]);
+      ghosts["11"] = this.physics.add.sprite(300, 150, 'ghost1');
+      ghosts["11"].setName('11');
+      ghosts["22"] = this.physics.add.sprite(580, 400, 'ghost1');
+      ghosts["22"].setName('22');
+      ghosts["33"] = this.physics.add.sprite(580, 80, 'ghost1');
+      ghosts["33"].setName('33');
+      ghosts["44"] = this.physics.add.sprite(716, 400, 'ghost1');
+      ghosts["44"].setName('44');
+      ghosts["55"] = this.physics.add.sprite(256, 550, 'ghost1');
+      ghosts["55"].setName('55');
+      ghosts["66"] = this.physics.add.sprite(516, 600, 'ghost1');
+      ghosts["66"].setName('66');      
+      ghosts["22"].rotation = 45;
+      ghosts["11"].rotation = 45;
+      ghosts["55"].rotation = 45;
+      ghosts["66"].rotation = 45;
+
+      mobs.add(ghosts["11"]);
+      mobs.add(ghosts["22"]);
+      mobs.add(ghosts["33"]);
+      mobs.add(ghosts["44"]);
+      mobs.add(ghosts["55"]);
+      mobs.add(ghosts["66"]);
 
       player.setGravityY(500);
       player.setBounce(0.2);
@@ -114,12 +115,12 @@ class LEVEL_NINE extends Phaser.Scene{
       if(gameover == true){
         return;
       }
-      animateGhostVetical(ghosts["Ghost1"]);
-      animateGhostVetical(ghosts["Ghost2"]);
-      animateGhostHorizontal(ghosts["Ghost3"]);
-      animateGhostHorizontal(ghosts["Ghost4"]);
-      animateGhostVetical(ghosts["Ghost5"]);
-      animateGhostVetical(ghosts["Ghost6"]);
+      animateGhostVetical(ghosts["11"]);
+      animateGhostVetical(ghosts["22"]);
+      animateGhostHorizontal(ghosts["33"]);
+      animateGhostHorizontal(ghosts["44"]);
+      animateGhostVetical(ghosts["55"]);
+      animateGhostVetical(ghosts["66"]);
       refreshPoints(this);
       animateObjects(this);
   
