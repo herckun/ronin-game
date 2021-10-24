@@ -1,6 +1,6 @@
 var config = {
 width:800,
-type: Phaser.AUTO,
+type: Phaser.CANVAS,
 height:600,
 parent: 'game',
 backgroundColor :0x141414,
