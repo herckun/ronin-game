@@ -141,7 +141,7 @@ function animateGhostVetical(who){
   var id = who.name;
 
   if(typeof directions[id] === 'undefined'){
-    directions[id] = 'up';
+    directions[id] = 'down';
   }
   if(directions[id] == 'down'){
     who.anims.play('fly_to_right', true);
