@@ -14,6 +14,11 @@ function refreshHealth(scene){
     break;
     case 0:
     statusBar = scene.add.image(100, 45, '0of3_status');
+    break;
+    default:
+      statusBar.destroy();
+      statusBar = scene.add.image(100, 45, 'status');
+       
 
   }
 }
