@@ -1,6 +1,6 @@
 var config = {
 width:800,
-type: Phaser.WEBGL,
+type: Phaser.AUTO,
 height:600,
 parent: 'game',
 backgroundColor :0x141414,
