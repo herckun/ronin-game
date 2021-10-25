@@ -30,6 +30,7 @@ function refreshPoints(scene){
 }
 function playerMovements(cursors,player,thisGame){
   player.body.velocity.x = 0;
+  
   if(player.body.touching.down){
     availJumps = defaultJumps;
   }
@@ -87,6 +88,7 @@ function bad(){
     //kill player movement
     cursors.left.isDown = false; 
     cursors.right.isDown = false;  
+    player.body.velocity.x = 0;
 
   if(health > 0){
     player.y = spawnpoint.y;
@@ -191,7 +193,8 @@ function animateGhostHorizontal(who){
 function levelUp(){
     //kill player movement
     cursors.left.isDown = false; 
-    cursors.right.isDown = false; 
+    cursors.right.isDown = false;  
+    player.body.velocity.x = 0;
   blossom.destroy();
   sfx['levelup'].play();
   addPoints(this,100);
