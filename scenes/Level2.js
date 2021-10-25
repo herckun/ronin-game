@@ -85,9 +85,9 @@ class LEVEL_TWO extends Phaser.Scene{
     animateGhostHorizontal(ghosts["Ghost1"]);
     animateGhostHorizontal(ghosts["Ghost2"]);
     animatePlatFormsHorizontal(moving_platforms['plat1'],400);
-    animatePlatFormsHorizontal(moving_platforms['plat2'],400);
+    animatePlatFormsHorizontal(moving_platforms['plat2'],200);
     animatePlatFormsHorizontal(moving_platforms['plat3'],400);
-    animatePlatFormsHorizontal(moving_platforms['plat4'],400);
+    animatePlatFormsHorizontal(moving_platforms['plat4'],100);
     thisgame = this;
 
     animateObjects(this);
